@@ -1,0 +1,144 @@
+@import "reset";
+@import "sections";
+@import "classes";
+
+$font-stack: Helvetica, sans-serif;
+$codeFont: "Consolas", "Courier New", "monospace";
+$black-color: #000;
+$silver-color: #c0c0c0;
+$red-color: #dc143c;
+$selectedRed: #9c143c;
+$borderColor: #ccc;
+$baseSize: 14px;
+
+html {
+  font: 100% $font-stack;
+}
+
+header {
+  width: max-content;
+  height: max-content;
+  padding: 10px;
+  margin: 20px;
+}
+
+body {
+  color: $silver-color;
+}
+
+footer {
+  width: max-content;
+  height: max-content;
+  padding: 10px;
+  margin: 20px;
+}
+
+a:link {
+  color: $red-color;
+}
+
+a:visited a:hover a:active {
+  color: $selectedRed;
+}
+
+p {
+  font-size: $baseSize;
+}
+
+h1 {
+  font-size: $baseSize + 6;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: $baseSize + 12;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: $baseSize + 18;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: $baseSize + 24;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: $baseSize + 30;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: $baseSize + 36;
+  font-weight: bold;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid $borderColor;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: $red-color;
+  color: $black-color;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: $selectedRed;
+}
+
+table,
+th,
+td {
+  font-size: $baseSize + 6;
+  border: 1px solid $borderColor;
+}
+
+th {
+  font-weight: bold;
+}
+
+button {
+  font-size: $baseSize + 6;
+}
+
+code {
+  font-family: $codeFont;
+}
+
+img {
+  width: auto;
+  height: auto;
+}
+
+nav {
+  text-decoration: none;
+}
+
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-green {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}

@@ -1,0 +1,279 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  padding: 5px;
+  color: black;
+  width: 100%;
+  display: inline-block;
+}
+
+.div-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-silver {
+  background-color: #c0c0c0;
+}
+
+.bg-red {
+  background-color: #dc143c;
+}
+
+.header-black {
+  padding: 60px;
+  text-align: center;
+  background-color: #000;
+  color: #c0c0c0;
+  font-size: 30px;
+}
+
+.header-red {
+  padding: 60px;
+  text-align: center;
+  background-color: #c0c0c0;
+  color: #c0c0c0;
+  font-size: 30px;
+}
+
+.header-red {
+  padding: 60px;
+  text-align: center;
+  background-color: #dc143c;
+  color: #c0c0c0;
+  font-size: 30px;
+}
+
+.navigation {
+  background-color: #000;
+  padding: 20px;
+}
+.navigation ul {
+  list-style: none;
+}
+.navigation li {
+  text-align: center;
+  margin-top: 20px;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav ul {
+  text-align: center;
+  list-style-type: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+}
+nav ul li {
+  display: inline;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 17px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px;
+}
+nav ul li a:hover {
+  background-color: #111;
+}
+
+.content {
+  text-align: center;
+}
+
+html {
+  font: 100% Helvetica, sans-serif;
+}
+
+header {
+  width: max-content;
+  height: max-content;
+  padding: 10px;
+  margin: 20px;
+}
+
+body {
+  color: #c0c0c0;
+}
+
+footer {
+  width: max-content;
+  height: max-content;
+  padding: 10px;
+  margin: 20px;
+}
+
+a:link {
+  color: #dc143c;
+}
+
+a:visited a:hover a:active {
+  color: #9c143c;
+}
+
+p {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #dc143c;
+  color: #000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #9c143c;
+}
+
+table,
+th,
+td {
+  font-size: 20px;
+  border: 1px solid #ccc;
+}
+
+th {
+  font-weight: bold;
+}
+
+button {
+  font-size: 20px;
+}
+
+code {
+  font-family: "Consolas", "Courier New", "monospace";
+}
+
+img {
+  width: auto;
+  height: auto;
+}
+
+nav {
+  text-decoration: none;
+}
+
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-green {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+/*# sourceMappingURL=basics.css.map */
