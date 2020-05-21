@@ -159,6 +159,34 @@ table {
   margin-top: 20px;
 }
 
+.sticky-nav {
+  overflow: hidden;
+  background: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky-nav ul {
+  text-align: center;
+  list-style-type: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+}
+.sticky-nav ul li {
+  display: inline;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 17px;
+}
+.sticky-nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px;
+}
+.sticky-nav ul li a:hover {
+  background-color: #111;
+}
+
 .content {
   text-align: center;
 }
@@ -280,22 +308,32 @@ table {
 
 .item1 {
   grid-area: header;
+  padding: 10px;
+  margin: 10px;
 }
 
 .item2 {
   grid-area: menu;
+  padding: 10px;
+  margin: 10px;
 }
 
 .item3 {
   grid-area: main;
+  padding: 10px;
+  margin: 10px;
 }
 
 .item4 {
   grid-area: right;
+  padding: 10px;
+  margin: 10px;
 }
 
 .item5 {
   grid-area: footer;
+  padding: 10px;
+  margin: 10px;
 }
 
 .grid-container {
@@ -472,34 +510,6 @@ code {
 img {
   width: auto;
   height: auto;
-}
-
-.sticky-nav {
-  overflow: hidden;
-  background: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.sticky-nav ul {
-  text-align: center;
-  list-style-type: none;
-  list-style-type: none;
-  margin: 0;
-  padding: 15px;
-}
-.sticky-nav ul li {
-  display: inline;
-  font-family: "Fira Sans", sans-serif;
-  font-size: 17px;
-}
-.sticky-nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 14px;
-}
-.sticky-nav ul li a:hover {
-  background-color: #111;
 }
 
 /*# sourceMappingURL=style.css.map */

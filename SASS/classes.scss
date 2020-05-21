@@ -116,6 +116,34 @@ $borderColor: #ccc;
   }
 }
 
+.sticky-nav {
+  overflow: hidden;
+  background: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  ul {
+    text-align: center;
+    list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    li {
+      display: inline;
+      font-family: "Fira Sans", sans-serif;
+      font-size: 17px;
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 14px;
+        &:hover {
+          background-color: #111;
+        }
+      }
+    }
+  }
+}
+
 .content {
   text-align: center;
 }
@@ -165,7 +193,7 @@ $borderColor: #ccc;
 
 .well {
   position: relative;
-  padding: 0.5rem 1.0rem;
+  padding: 0.5rem 1rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: 0.5rem;
@@ -208,12 +236,12 @@ $borderColor: #ccc;
 
 .alert-yellow {
   color: rgb(130, 130, 28);
-  background-color:  rgb(236, 236, 90);
+  background-color: rgb(236, 236, 90);
 }
 
 .alert-blue {
   color: rgb(16, 103, 132);
-  background-color:  rgb(111, 203, 234);
+  background-color: rgb(111, 203, 234);
 }
 
 .column-left {
@@ -235,18 +263,38 @@ $borderColor: #ccc;
   justify-content: center;
 }
 
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
+.item1 {
+  grid-area: header;
+  padding: 10px;
+  margin: 10px;
+}
+.item2 {
+  grid-area: menu;
+  padding: 10px;
+  margin: 10px;
+}
+.item3 {
+  grid-area: main;
+  padding: 10px;
+  margin: 10px;
+}
+.item4 {
+  grid-area: right;
+  padding: 10px;
+  margin: 10px;
+}
+.item5 {
+  grid-area: footer;
+  padding: 10px;
+  margin: 10px;
+}
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
+    "header header header header header header"
+    "menu main main main right right"
+    "menu footer footer footer footer footer";
   grid-gap: 10px;
   // background-color: #2196F3;
   padding: 10px;
@@ -279,17 +327,17 @@ hr.rounded {
 }
 
 .font-times {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .font-georgia {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .font-Calibri {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .font-impact {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
