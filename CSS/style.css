@@ -428,15 +428,15 @@ table {
 }
 
 hr.dashed {
-  border-top: 3px dashed #000;
+  border-top: 6px dashed #000;
 }
 
 hr.dotted {
-  border-top: 3px dotted #000;
+  border-top: 6px dotted #000;
 }
 
 hr.solid {
-  border-top: 3px solid #000;
+  border-top: 6px solid #000;
 }
 
 hr.rounded {
@@ -508,6 +508,35 @@ hr.rounded {
     width: 60%;
   }
 }
+.img-circle {
+  min-width: 50px;
+  max-width: 30%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.img-rounded-edge {
+  min-width: 50px;
+  max-width: 30%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.img-hover:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.div_img_card {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.div_img_container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
 html {
   font: 100% Helvetica, sans-serif;
   height: 100%;
@@ -628,11 +657,6 @@ button {
 
 code {
   font-family: "Consolas", "Courier New", "monospace";
-}
-
-img {
-  width: auto;
-  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
