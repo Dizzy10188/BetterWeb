@@ -1,5 +1,4 @@
 @import "reset";
-@import "sections";
 @import "classes";
 
 $font-stack: Helvetica, sans-serif;
@@ -138,7 +137,7 @@ img {
   height: auto;
 }
 
-nav {
+.sticky-nav {
   overflow: hidden;
   background: #333;
   position: fixed;

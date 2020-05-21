@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-silver">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,36 +9,116 @@
 </head>
 
 <body>
-  <nav>
+  <nav class="sticky-nav">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="HTags.html">Text Tags</a></li>
-      <li><a href="Table.html">Table</a></li>
+      <li><a href="Tags.html">Text Tags</a></li>
+      <li><a href="Layouts.html">Layouts</a></li>
       <li><a href="Input.html">Inputs</a></li>
-      <!-- <li><a href=>Feature</a></li> -->
+      <li><a href="Image.html">Images</a></li>
     </ul>
   </nav>
   <div class="header-black">
     <h6>Welcome</h1>
       <p class="fg-silver">To my Sass documentation website</p>
   </div>
-  <div class="column-left bg-black">&nbsp;</div>
-  <div class="column-right bg-black">&nbsp;</div>
-  <p class="text_centered">The header, like the one used above, has 3 different colors. Red, Silver, and Black</p>
-  <div class="container flex-column middle">
-    <p></p>
-    <div class="dropdown">
-      <div class="dropbtn">Dropdown</div>
-      <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+  <div class="grid-container">
+    <div class="item1 fg-black">
+      <h3>Dropdown box</h3>
+    </div>
+    <div class="item2 text_centered">
+      <div class="dropdown">
+        <div class="dropbtn">Dropdown</div>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
       </div>
+    </div>
+    <div class="item3 fg-black">To the left is a dropdown box.
+      The way to create a dropdown box is by using the code below</div>
+    <div class="item4"></div>
+    <div class="item5 bg-black">
+      <xmp>
+        <div class="dropdown">
+          <div class="dropbtn">Dropdown</div>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </xmp>
+    </div>
+  </div>
+  <hr class="rounded">
+  <div class="grid-container">
+    <div class="item1 fg-black">
+      <h3>Header</h3>
+    </div>
+    <div class="item2">
+      <div class="header-red">
+        <h2>Header</h2>
+      </div>
+    </div>
+    <div class="item3 fg-black">To the left is a header.
+      The way to create a header is by using the code below</div>
+    <div class="item4"></div>
+    <div class="item5 bg-black">
+      <xmp>
+        <div class="header-black"></div>
+        <div class="header-silver"></div>
+        <div class="header-red"></div>
+      </xmp>
+    </div>
+  </div>
+  <hr class="rounded">
+  <div class="grid-container">
+    <div class="item1 fg-black">
+      <h3>Nav-bar</h3>
+    </div>
+    <div class="item2"></div>
+    <div class="item3 fg-black">On the top of the page is a Nav-bar.
+      The way to create a Nav-bar is by using the code below</div>
+    <div class="item4"></div>
+    <div class="item5 bg-black">
+      <xmp>
+        <nav>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </nav>
+      </xmp>
+    </div>
+  </div>
+  <hr class="rounded">
+  <div class="grid-container">
+    <div class="item1 fg-black">
+      <h3>Divider</h3>
+    </div>
+    <div class="item2 bg-red">
+      <hr class="dashed">
+      <hr class="dotted">
+      <hr class="solid">
+      <hr class="rounded">
+    </div>
+    <div class="item3 fg-black">To the left is a divider.
+      The way to create a divider is by using the code below</div>
+    <div class="item4"></div>
+    <div class="item5 bg-black">
+      <xmp>
+        <hr class="dashed">
+        <hr class="dotted">
+        <hr class="solid">
+        <hr class="rounded">
+      </xmp>
     </div>
   </div>
 </body>
-<footer>
-
-</footer>
+<footer></footer>
 
 </html>
