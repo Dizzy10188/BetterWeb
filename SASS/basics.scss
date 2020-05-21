@@ -9,10 +9,11 @@ $silver-color: #c0c0c0;
 $red-color: #dc143c;
 $selectedRed: #9c143c;
 $borderColor: #ccc;
-$baseSize: 14px;
+$baseSize: 16px;
 
 html {
   font: 100% $font-stack;
+  height: 100%;
 }
 
 header {
@@ -23,10 +24,12 @@ header {
 }
 
 body {
+  height: 100%;
   color: $silver-color;
 }
 
 footer {
+  height: 100%;
   width: max-content;
   height: max-content;
   padding: 10px;
@@ -42,37 +45,46 @@ a:visited a:hover a:active {
 }
 
 p {
+  padding: 5px;
+  margin: 5px;
   font-size: $baseSize;
+  color: black;
 }
 
 h1 {
   font-size: $baseSize + 6;
   font-weight: bold;
+  padding: 5px;
 }
 
 h2 {
   font-size: $baseSize + 12;
   font-weight: bold;
+  padding: 5px;
 }
 
 h3 {
   font-size: $baseSize + 18;
   font-weight: bold;
+  padding: 5px;
 }
 
 h4 {
   font-size: $baseSize + 24;
   font-weight: bold;
+  padding: 5px;
 }
 
 h5 {
   font-size: $baseSize + 30;
   font-weight: bold;
+  padding: 5px;
 }
 
 h6 {
   font-size: $baseSize + 36;
   font-weight: bold;
+  padding: 5px;
 }
 
 input[type="text"],
@@ -106,6 +118,7 @@ th,
 td {
   font-size: $baseSize + 6;
   border: 1px solid $borderColor;
+  padding: 5px;
 }
 
 th {
@@ -126,19 +139,29 @@ img {
 }
 
 nav {
-  text-decoration: none;
-}
-
-.alert {
-  position: relative;
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-}
-
-.alert-green {
-  color: #155724;
-  background-color: #d4edda;
-  border-color: #c3e6cb;
+  overflow: hidden;
+  background: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  ul {
+    text-align: center;
+    list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    li {
+      display: inline;
+      font-family: "Fira Sans", sans-serif;
+      font-size: 17px;
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 14px;
+        &:hover {
+          background-color: #111;
+        }
+      }
+    }
+  }
 }

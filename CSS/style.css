@@ -58,6 +58,11 @@ table {
   display: inline-block;
 }
 
+.text_centered {
+  text-align: center;
+  justify-content: center;
+}
+
 .flex_row {
   display: flex;
   flex-direction: row;
@@ -70,26 +75,46 @@ table {
 
 .div-form {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background: #f2f2f2;
   padding: 20px;
 }
 
+.fg-black {
+  color: #000;
+}
+
+.fg-silver {
+  color: #c0c0c0;
+}
+
+.fg-red {
+  color: #dc143c;
+}
+
 .bg-black {
-  background-color: #000;
+  background: #000;
 }
 
 .bg-silver {
-  background-color: #c0c0c0;
+  background: #c0c0c0;
 }
 
 .bg-red {
-  background-color: #dc143c;
+  background: #dc143c;
 }
 
 .header-black {
   padding: 60px;
   text-align: center;
-  background-color: #000;
+  background: #000;
+  color: #c0c0c0;
+  font-size: 30px;
+}
+
+.header-silver {
+  padding: 60px;
+  text-align: center;
+  background: #c0c0c0;
   color: #c0c0c0;
   font-size: 30px;
 }
@@ -97,21 +122,13 @@ table {
 .header-red {
   padding: 60px;
   text-align: center;
-  background-color: #c0c0c0;
-  color: #c0c0c0;
-  font-size: 30px;
-}
-
-.header-red {
-  padding: 60px;
-  text-align: center;
-  background-color: #dc143c;
+  background: #dc143c;
   color: #c0c0c0;
   font-size: 30px;
 }
 
 .navigation {
-  background-color: #000;
+  background: #000;
   padding: 20px;
 }
 .navigation ul {
@@ -122,40 +139,12 @@ table {
   margin-top: 20px;
 }
 
-nav {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-nav ul {
-  text-align: center;
-  list-style-type: none;
-  list-style-type: none;
-  margin: 0;
-  padding: 15px;
-}
-nav ul li {
-  display: inline;
-  font-family: "Fira Sans", sans-serif;
-  font-size: 17px;
-}
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 14px;
-}
-nav ul li a:hover {
-  background-color: #111;
-}
-
 .content {
   text-align: center;
 }
 
 .dropbtn {
-  background-color: #dc143c;
+  background: #dc143c;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -171,7 +160,7 @@ nav ul li a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -185,7 +174,7 @@ nav ul li a:hover {
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background: #f1f1f1;
 }
 
 .dropdown:hover .dropdown-content {
@@ -193,25 +182,45 @@ nav ul li a:hover {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #9c143c;
+  background: #9c143c;
 }
 
-.column {
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-green {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.column-left {
   width: 10%;
-  height: max-content;
-  margin: auto;
-}
-
-.left {
   float: left;
+  height: 100%;
 }
 
-.right {
+.column-right {
+  width: 10%;
   float: right;
+  height: 100%;
+}
+
+.middle {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 html {
   font: 100% Helvetica, sans-serif;
+  height: 100%;
 }
 
 header {
@@ -222,10 +231,12 @@ header {
 }
 
 body {
+  height: 100%;
   color: #c0c0c0;
 }
 
 footer {
+  height: 100%;
   width: max-content;
   height: max-content;
   padding: 10px;
@@ -241,37 +252,46 @@ a:visited a:hover a:active {
 }
 
 p {
-  font-size: 14px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 16px;
+  color: black;
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
+  padding: 5px;
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: bold;
+  padding: 5px;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 34px;
   font-weight: bold;
+  padding: 5px;
 }
 
 h4 {
-  font-size: 38px;
+  font-size: 40px;
   font-weight: bold;
+  padding: 5px;
 }
 
 h5 {
-  font-size: 44px;
+  font-size: 46px;
   font-weight: bold;
+  padding: 5px;
 }
 
 h6 {
-  font-size: 50px;
+  font-size: 52px;
   font-weight: bold;
+  padding: 5px;
 }
 
 input[type=text],
@@ -303,8 +323,9 @@ input[type=submit]:hover {
 table,
 th,
 td {
-  font-size: 20px;
+  font-size: 22px;
   border: 1px solid #ccc;
+  padding: 5px;
 }
 
 th {
@@ -312,7 +333,7 @@ th {
 }
 
 button {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 code {
@@ -325,21 +346,31 @@ img {
 }
 
 nav {
+  overflow: hidden;
+  background: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav ul {
+  text-align: center;
+  list-style-type: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+}
+nav ul li {
+  display: inline;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 17px;
+}
+nav ul li a {
+  color: white;
   text-decoration: none;
+  padding: 14px;
+}
+nav ul li a:hover {
+  background-color: #111;
 }
 
-.alert {
-  position: relative;
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-}
-
-.alert-green {
-  color: #155724;
-  background-color: #d4edda;
-  border-color: #c3e6cb;
-}
-
-/*# sourceMappingURL=basics.css.map */
+/*# sourceMappingURL=style.css.map */
