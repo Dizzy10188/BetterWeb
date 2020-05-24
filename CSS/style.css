@@ -570,13 +570,19 @@ table {
 }
 
 .flex_row {
+  display: -webkit-box;
+  display: -moz-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: row;
 }
 
 .flex_column {
+  display: -webkit-box;
+  display: -moz-box;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
 }
