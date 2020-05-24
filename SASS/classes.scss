@@ -296,6 +296,10 @@ $borderColor: #ccc;
   height: 100%;
 }
 
+.columns-6 {
+  width: 10%;
+}
+
 .middle {
   width: 80%;
   margin: auto;
@@ -420,11 +424,11 @@ hr.rounded {
   background-color: #ddd;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 15px;
-}
+// .column {
+//   float: left;
+//   width: 33.33%;
+//   padding: 15px;
+// }
 
 .row:after {
   content: "";
@@ -432,11 +436,11 @@ hr.rounded {
   clear: both;
 }
 
-@media screen and (max-width: 600px) {
-  .column {
-    width: 60%;
-  }
-}
+// @media screen and (max-width: 600px) {
+//   .column {
+//     width: 60%;
+//   }
+// }
 
 .img-circle {
   min-width: 50px;
@@ -465,8 +469,4 @@ hr.rounded {
 .div-img-container {
   text-align: center;
   padding: 10px 20px;
-}
-
-.min-width-50px {
-  min-width: 50px;
 }
